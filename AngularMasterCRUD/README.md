@@ -8,3 +8,6 @@ Project
     create database
     create project backend
     create project frontEnt
+
+    Continuar video
+    time: 33:14

@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { OrdersItemsComponent } from './components/orders-items/orders-items.component';
+import { OrderService } from './components/shared/order.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { OrdersItemsComponent } from './components/orders-items/orders-items.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [OrderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
